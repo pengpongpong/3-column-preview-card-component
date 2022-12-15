@@ -1,0 +1,53 @@
+@import "https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.preview {
+    width: 100%;
+    padding: 2.5rem;
+}
+.preview img {
+    margin-bottom: 1.5rem;
+    width: 25%;
+}
+.preview h1,
+.preview button {
+    color: #f2f2f2;
+}
+.preview h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display", cursive;
+}
+.preview p,
+.preview button {
+    font-family: "Lexend Deca", sans-serif;
+}
+.preview p {
+    margin: 1.5rem 0;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+@media (min-width: 400px) {
+    .preview p {
+        margin-bottom: 4rem;
+    }
+}
+.preview button {
+    width: 130px;
+    padding: 0.6rem 1rem;
+    border: 0px;
+    border-radius: 20px;
+    border: 2px solid #f2f2f2;
+    background-color: #f2f2f2;
+    font-size: 0.8rem;
+}
+.preview button:hover {
+    cursor: pointer;
+    background-color: inherit;
+    color: #f2f2f2 !important;
+    transition: 0.2s ease-in-out;
+}

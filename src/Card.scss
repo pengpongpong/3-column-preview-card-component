@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$brigth_oragne: hsl(31, 77%, 52%);
+$dark_cyan: hsl(184, 100%, 22%);
+$dark_cyan2: hsl(179, 100%, 13%);
+
+$transparent_white: hsla(0, 0%, 100%, 0.75);
+$light_gray: hsl(0, 0%, 95%);
+
+$lexend_deca: 'Lexend Deca', sans-serif;
+$big_shoulders_display: 'Big Shoulders Display', cursive;
+
+$mid_screen: 400px;
+
+.preview {
+    width: 100%;
+    padding: 2.5rem;
+
+    img {
+        margin-bottom: 1.5rem;
+        width: 25%;
+    }
+
+    h1, button {
+        color: $light_gray;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-family: $big_shoulders_display;
+    }
+
+    p, button {
+        font-family: $lexend_deca;
+    }
+
+    p {
+        margin: 1.5rem 0;
+        color: $transparent_white;
+        font-size: .8rem;
+        line-height: 1.5rem;
+
+        @media (min-width: $mid_screen) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    button {
+        width: 130px;
+        padding: .6rem 1rem;
+        border: 0px;
+        border-radius: 20px;
+        border: 2px solid $light_gray;
+        background-color: $light_gray;
+        font-size: .8rem;
+
+        &:hover {
+            cursor: pointer;
+            background-color: inherit;
+            color: $light_gray !important;
+            transition: .2s ease-in-out;
+        }
+    }
+}
